@@ -20,7 +20,8 @@
 }
 
 .introjs-fixParent {
-  z-index: auto !important;
+  /* Hide this for now but make sure the apps z-indexes are not to high */
+  /*z-index: auto !important;*/
 }
 
 .introjs-showElement {
