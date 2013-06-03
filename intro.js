@@ -431,7 +431,7 @@
 
       //skip button
       var skipTooltipButton = document.createElement('a');
-      skipTooltipButton.className = 'introjs-button introjs-skipbutton';
+      skipTooltipButton.className = 'introjs-button introjs-skipbutton btn btn-info';
       skipTooltipButton.href = 'javascript:void(0);';
       skipTooltipButton.innerHTML = this._options.skipLabel;
 
@@ -484,11 +484,14 @@
     }
 
     var parentElm = targetElement.element.parentNode;
+    console.warn('PARENT', parentElm);
     while(parentElm != null) {
       if(parentElm.tagName.toLowerCase() === 'body') break;
 
       var zIndex = _getPropValue(parentElm, 'z-index');
+    console.warn('PARENT', parentElm, zIndex);
       if(/[0-9]+/.test(zIndex)) {
+        console.warn('PARENT FOUND', parentElm, zIndex);
         parentElm.className += ' introjs-fixParent';
       }
       parentElm = parentElm.parentNode;
