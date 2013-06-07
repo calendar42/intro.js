@@ -40,7 +40,7 @@
   /*border: 1px solid #777;*/
   border: 3px solid #0088cc;
   border-radius: 4px;
-  padding: 4px;
+  padding-top: 14px;
   box-shadow: 0 2px 15px rgba(0,0,0,.4);
   -webkit-transition: all 0.3s ease-out;
      -moz-transition: all 0.3s ease-out;
